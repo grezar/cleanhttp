@@ -3,4 +3,4 @@ require "redoctor"
 
 STDOUT.sync = true
 
-exit Redoctor::Cli.new(ARGV).run
+exit Redoctor::Cli.new(ARGV).run || 128
