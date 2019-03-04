@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require "redoctor"
+
+STDOUT.sync = true
+
+exit Redoctor::Cli.new(ARGV).run
