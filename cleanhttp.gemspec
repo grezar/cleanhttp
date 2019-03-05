@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "redoctor/version"
+require "cleanhttp/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "redoctor"
-  spec.version       = Redoctor::VERSION
+  spec.name          = "cleanhttp"
+  spec.version       = Cleanhttp::VERSION
   spec.authors       = ["grezar"]
   spec.email         = ["grezar.dev@gmail.com"]
 
   spec.summary       = %q{Test HTTP redirect}
-  spec.homepage      = "https://github.com/grezar/redoctor"
+  spec.homepage      = "https://github.com/grezar/cleanhttp"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

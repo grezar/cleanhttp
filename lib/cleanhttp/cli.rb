@@ -1,6 +1,6 @@
 require "optparse"
 
-module Redoctor
+module Cleanhttp
   class Cli
     def initialize(argv)
       @argv = argv.dup
@@ -27,7 +27,7 @@ module Redoctor
     end
 
     def do_version
-      puts "redoctor #{Redoctor::VERSION}"
+      puts "cleanhttp #{Cleanhttp::VERSION}"
       0
     end
   end
