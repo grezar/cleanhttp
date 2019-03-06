@@ -1,6 +1,6 @@
 domain "httpstat.us" do
   https true
-  path "/301" do
-    location "https://httpstat.us"
+  expect "/301" do
+    status 301
   end
 end
