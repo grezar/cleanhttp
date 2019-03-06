@@ -45,7 +45,7 @@ module Cleanhttp
       Dir.chdir(File.dirname(options[:file]))
 
       expected = Config.load(File.read(File.basename(options[:file])), options[:file], 1)
-      puts expected
+      puts expected.config
       0
     end
   end
